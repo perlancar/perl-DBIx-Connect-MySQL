@@ -28,10 +28,12 @@ sub connect {
                 if (!defined($user) && /^\s*user\s*=\s*(.+)/) {
                     log_trace("Setting DBI connection user from %s", $path);
                     $user = $1;
+                    $user = $1 if $user =~ /\A"(.*)"\z/;
                 }
                 if (!defined($pass) && /^\s*password\s*=\s*(.+)/) {
                     log_trace("Setting DBI connection password from %s", $path);
                     $pass = $1;
+                    $pass = $1 if $pass =~ /\A"(.*)"\z/;
                 }
 
                 last if defined $user && defined $pass;
