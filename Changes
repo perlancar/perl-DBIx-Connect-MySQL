@@ -1,8 +1,8 @@
-0.002   2017-08-16 (PERLANCAR)
+0.002   2017-08-16  Released-By: PERLANCAR
 
 	- [Bugfix] Handle quoted parameter value in .my.cnf.
 
 
-0.001   2017-08-15 (PERLANCAR)
+0.001   2017-08-15  Released-By: PERLANCAR
 
         - First release.
