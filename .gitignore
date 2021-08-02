@@ -2,3 +2,4 @@ DBIx-Connect-MySQL-*
 .build
 *~
 nytprof*
+.DS_Store
